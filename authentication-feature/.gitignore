@@ -1,0 +1,54 @@
+# Gw generate pake gemini, males cuy index satu satu wkwkwkw
+
+
+# --- Binari & Hasil Kompilasi ---
+# Mengabaikan file executable yang dihasilkan oleh 'go build'
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+# Mengabaikan folder output binari jika menggunakan folder khusus
+bin/
+out/
+
+# --- Hasil Pengujian & Profiling ---
+# Binari pengujian yang dibuat dengan 'go test -c'
+*.test
+# File hasil coverage dan profil
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# --- Dependensi ---
+# Folder vendor biasanya diabaikan kecuali melakukan explicit vendoring
+# vendor/
+
+# --- Workspace & Tools ---
+# File workspace Go (digunakan untuk pengembangan lokal banyak modul)
+go.work
+go.work.sum
+
+# --- Konfigurasi Sensitif ---
+# Jangan pernah memasukkan file rahasia ke Git
+.env
+*.local
+
+# --- Editor & IDE ---
+# JetBrains (GoLand, IntelliJ)
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Visual Studio Code
+.vscode/
+
+# Vim/Temporary files
+*.swp
+*~
+
+# --- Sistem Operasi ---
+.DS_Store
+Thumbs.db
